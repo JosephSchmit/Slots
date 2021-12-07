@@ -12,7 +12,7 @@ function roll(){
     var slot1=options[random(options.length)];
     var slot2=options[random(options.length)];
     var slot3=options[random(options.length)];
-    var bet = document.getElementsByName("betInput");
+    var bet = document.getElementById("betInput").value;
     document.write(slot1 + " - " + slot2 + " - " + slot3 + "<br>");
     if(slot1 === slot2 === slot3){
         document.write((bet *3));
