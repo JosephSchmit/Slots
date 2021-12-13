@@ -11,27 +11,23 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
-        <h1> Your total money is:</h1>
+        <!--Money!-->
+        <h2> Your total money is:</h2>
         <p id="winnings">1000</p> <br>
-        
-        
-        <img id="slot1" src="bell.jpg" alt="">
-        <img id="slot2" src="bell.jpg" alt="">
-        <img id="slot3" src="bell.jpg" alt="">
-        
-        
-        <form onsubmit="roll()">
-            <input type="number" id="betInput" value="1" min="1" max="1000"> <br>
+        <!--Starting Images-->
+        <img id="slot1" src="bar.jpg" alt="">
+        <img id="slot2" src="bar.jpg" alt="">
+        <img id="slot3" src="bar.jpg" alt="">
+        <!--Game Buttons-->
+        <form onsubmit="return roll()">
+            <input type="number" id="betInput" value="1" min="1"> <br>
             <input type="submit" value="Enter"> <br>
         </form>
-        
-        
-        
+        <!--Bottom Text-->
         <p id="endMGS">Enter bet and press enter to play.</p>
-        
-        
-        
+        <br>
+        <!--You Ran Out of Money Button-->
+        <button id="resetButton">Rest Game?</button>
         
         <script src="SlotsGetHub.js"></script>
     </body>
