@@ -45,7 +45,7 @@ function roll(){
         image("slot2", slot2);
         image("slot3", slot3);
     //Actual Game Calculations Part 2
-        if(slot1 === slot2 === slot3){
+        if(slot1 === slot2 && slot2 === slot3){
             document.getElementById("winnings").innerHTML = 
                 Number(document.getElementById("winnings").innerHTML) + (bet * 3);
             document.getElementById("endMGS").innerHTML = "You Won Big!!! You won: " + (bet *3) + ". play again?";
